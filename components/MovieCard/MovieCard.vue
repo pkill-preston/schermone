@@ -6,9 +6,9 @@
                 <IconStar color="yellow" />
             </div>
             <div class="absolute bottom-0 left-0 p-2">
-                <Badge class="bg-green-500 hover:bg-green-600">R$ 7,98</Badge>
+                <UBadge class="bg-green-500 hover:bg-green-600">R$ 7,98</UBadge>
             </div>
-            <NuxtImg class="rounded-[8px] w-full xl:h-96 lg:h-72 object-cover" src="/img/placeholder.jpg" />
+            <NuxtImg class="rounded-[8px] w-full xl:h-72 lg:h-72 object-cover" src="/img/placeholder.jpg" />
         </div>
         <div class="flex gap-2 flex-col">
             <h3 class="text-2xl w-[calc(100% - 16px)] truncate">{{ title }}</h3>
@@ -17,10 +17,10 @@
                 <h3>({{ releaseYear }})</h3>
             </div>
             <div class="flex justify-between gap-2">
-                <Badge v-for="(item, index) in badges" :key="index"
-                    class="xs:text-[10px] lg:text-[9px] xl:text-[12px] md:text-[8px]">Romance</Badge>
+                <UBadge v-for="(item, index) in badges" :key="index"
+                    class="xs:text-[10px] lg:text-[9px] xl:text-[12px] md:text-[8px]">Romance</UBadge>
             </div>
-            <Button>Add to cart</Button>
+            <UButton class="justify-center" label="Add to cart" />
         </div>
     </div>
 </template>
@@ -32,9 +32,7 @@
         releaseYear: String,
         genres: Array<String>
     })
-    const badges = [1,2,3]
+    const badges = [1, 2, 3]
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
