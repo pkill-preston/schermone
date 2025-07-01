@@ -1,10 +1,16 @@
 <template>
   <div>
-    <UApp>
+    <App>
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
-    </UApp>
+    </App>
   </div>
 </template>
 
+<script setup lang="ts">
+const route = useRoute()
+useHead({
+  meta: [{ property: 'og:title', content: `App Name - ${route.meta.title}` }]
+})
+</script>
