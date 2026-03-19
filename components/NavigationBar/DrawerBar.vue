@@ -4,7 +4,6 @@
 			v-if="props.avatar == true"
 			alt="Heron Lorena"
 			size="xl"
-			src="/img/avatar.jpg"
 		/>
 		<Icon v-if="!props.avatar" class="size-6" name="i-lucide-shopping-cart" />
 		<template #content>

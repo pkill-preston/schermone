@@ -4,7 +4,7 @@
 /* Theme variables */
 :root {
   --ui-bg: #ffffff;
-  --ui-text: #18191b;
+  --ui-foreground: #18191b;
   --ui-bg-elevated: #ffffff;
   --ui-text-elevated: #242528;
   --ui-bg-accented: #ffffff;

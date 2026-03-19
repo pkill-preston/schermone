@@ -1,12 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	$meta:{
+	$meta: {
 		name: "Schermone"
 	},
 	runtimeConfig: {
 		public: {
-			apiBase: "https://api.themoviedb.org/3/",
-			apiToken: process.env.API_ACCESS_TOKEN
+			apiBase: process.env.API_URL,
+			apiToken: process.env.API_KEY
 		}
 	},
 	ssr: false,

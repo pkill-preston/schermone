@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="p-2 w-[47%] md:w-[30.5%] lg:w-[23%] xl:w-[18.5%] shadow-[0px_5px_48px_0px_rgba(0,_0,_0,_0.1)] flex flex-col justify-self-center bg-background dark:bg-card dark:border max-h-[440px] text-card-foreground gap-2 xl:gap-2 relative rounded-[8px] overflow-hidden"
+		class="p-2 w-[47%] md:w-[30.5%] lg:w-[23%] xl:w-[18.5%] shadow-[0px_5px_48px_0px_rgba(0,_0,_0,_0.1)] flex flex-col justify-self-center bg-background dark:bg-card dark:border text-card-foreground gap-2 xl:gap-2 relative rounded-[8px] overflow-hidden"
 	>
 		<div class="relative">
 			<div class="absolute top-0 right-0 p-2">
@@ -30,7 +30,7 @@
 			</div>
 			<NuxtImg
 				:class="adult ? 'blur-md brightness-75' : ''"
-				class="rounded-[8px] w-full xl:h-78 lg:h-72 md:h-64 h-46 object-cover"
+				class="rounded-[8px] w-full object-cover"
 				:src="`${posterPath}`"
 			/>
 		</div>
