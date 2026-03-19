@@ -25,6 +25,5 @@ onMounted(async () => {
     const genres = await getMovieGenres()
     const movieData = await getMovies(genres)
     movieStore.moviesState = [...movieData]
-	console.log(movieData)
 })
 </script>

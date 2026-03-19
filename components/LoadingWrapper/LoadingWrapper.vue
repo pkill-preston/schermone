@@ -14,7 +14,6 @@ onMounted(() => {
 
 <style scoped>
 
-    /* HTML: <div class="loader"></div> */
     .loader {
         height: 4px;
         width: 130px;
