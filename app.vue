@@ -7,8 +7,6 @@
 <script setup lang="ts">
 import { useSeoMeta, useHead } from '#imports'
 
-const route = useRoute()
-const url = useRequestURL()
 
 const appName = 'Schermone'
 
