@@ -6,8 +6,8 @@
       <Form
         :schema="schema"
         :state="state"
+		class="flex flex-col gap-y-4"
         @submit="onSubmit"
-        class="flex flex-col gap-y-4"
       >
         <FormField label="Full Name" name="name">
           <Input v-model="state.name" class="w-full" />
@@ -99,7 +99,6 @@
 <script setup lang="ts">
 import { vMaska } from 'maska/vue'
 import * as v from 'valibot'
-import type { FormSubmitEvent } from '#i/types'
 
 const open = ref(false)
 
@@ -161,7 +160,8 @@ const state = reactive<Schema>({
   state: ''
 })
 
-function onSubmit(event: FormSubmitEvent<Schema>) {
+function onSubmit() {
+
   open.value = true
 }
 

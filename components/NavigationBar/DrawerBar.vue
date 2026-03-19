@@ -69,13 +69,6 @@ onMounted(() => {
 	width.value = window.innerWidth
 })
 
-interface CartItem {
-	id: number | string
-	title: string
-	amount: number
-	posterPath: string
-	rating: number
-}
 const cartStore = useCartStore()
 const cartState = computed(() => cartStore.cartState)
 </script>
